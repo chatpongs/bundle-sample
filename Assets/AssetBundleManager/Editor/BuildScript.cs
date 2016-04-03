@@ -18,7 +18,7 @@ namespace AssetBundles
 			// Choose the output path according to the build target.
 			//string outputPath = Path.Combine(Utility.AssetBundlesOutputPath,  Utility.GetPlatformName());
             //string outputPath = "/home/ubuntu/Documents/Build/BundleSample";
-            string outputPath = Utility.AssetBundlesOutputPath + "/Linux";
+            string outputPath = Utility.AssetBundlesOutputPath + "/" + Utility.GetPlatformName();
             Debug.Log(Utility.AssetBundlesOutputPath);
             Debug.Log(Utility.GetPlatformName());
             
