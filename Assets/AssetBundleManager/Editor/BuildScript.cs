@@ -18,15 +18,15 @@ namespace AssetBundles
 			// Choose the output path according to the build target.
 			//string outputPath = Path.Combine(Utility.AssetBundlesOutputPath,  Utility.GetPlatformName());
             //string outputPath = "/home/ubuntu/Documents/Build/BundleSample";
-            string outputPath = Utility.AssetBundlesOutputPath + "/" + Utility.GetPlatformName();
-            Debug.Log(Utility.AssetBundlesOutputPath);
-            Debug.Log(Utility.GetPlatformName());
+            string outputPath = Utility.AssetBundlesOutputPath + "/Android";
             
 			if (!Directory.Exists(outputPath) )
 				Directory.CreateDirectory (outputPath);
 	
 			//@TODO: use append hash... (Make sure pipeline works correctly with it.)
-			BuildPipeline.BuildAssetBundles (outputPath, BuildAssetBundleOptions.None, EditorUserBuildSettings.activeBuildTarget);
+			//BuildPipeline.BuildAssetBundles (outputPath, BuildAssetBundleOptions.None, EditorUserBuildSettings.activeBuildTarget);
+			BuildPipeline.BuildAssetBundles (outputPath, BuildAssetBundleOptions.None, BuildTarget.Android);
+
 		}
 	
 		public static void WriteServerURL()
