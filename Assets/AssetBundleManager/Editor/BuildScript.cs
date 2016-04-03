@@ -19,6 +19,8 @@ namespace AssetBundles
 			//string outputPath = Path.Combine(Utility.AssetBundlesOutputPath,  Utility.GetPlatformName());
             //string outputPath = "/home/ubuntu/Documents/Build/BundleSample";
             string outputPath = Utility.AssetBundlesOutputPath + "/Android";
+			Debug.Log (Utility.AssetBundlesOutputPath);
+			Debug.Log (Utility.GetPlatformName());
             
 			if (!Directory.Exists(outputPath) )
 				Directory.CreateDirectory (outputPath);
