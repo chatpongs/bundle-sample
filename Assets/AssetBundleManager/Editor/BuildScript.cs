@@ -16,8 +16,8 @@ namespace AssetBundles
 		public static void BuildAssetBundles()
 		{
 			// Choose the output path according to the build target.
-			string outputPath = Path.Combine(Utility.AssetBundlesOutputPath,  Utility.GetPlatformName());
-            outputPath = "/home/ubuntu/Documents/Build/BundleSample";
+			//string outputPath = Path.Combine(Utility.AssetBundlesOutputPath,  Utility.GetPlatformName());
+            string outputPath = "/home/ubuntu/Documents/Build/BundleSample";
 			//if (!Directory.Exists(outputPath) )
 				//Directory.CreateDirectory (outputPath);
 	
